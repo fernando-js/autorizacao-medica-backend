@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     environment: str = "development"
     
     # Segurança
-    secret_key: str
+    secret_key: str = "change-me-in-production-secret-key-not-secure"  # Valor padrão temporário
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
     

@@ -19,4 +19,5 @@ pydantic==2.5.0
 pydantic-settings==2.1.0
 
 # Banco de dados SQLite (para desenvolvimento)
-# PostgreSQL (produção): psycopg2-binary==2.9.9
+# PostgreSQL (produção) - descomente para usar PostgreSQL
+psycopg2-binary==2.9.9
