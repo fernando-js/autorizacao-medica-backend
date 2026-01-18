@@ -28,9 +28,32 @@ class UsuarioLogin(BaseModel):
     senha: str
 
 
+class UsuarioUpdate(BaseModel):
+    """Schema para atualizar dados do usuário"""
+    nome: Optional[str] = None
+    email: Optional[EmailStr] = None
+    cpf: Optional[str] = None
+    telefone: Optional[str] = None
+    data_nascimento: Optional[date] = None
+    nome_municipio: Optional[str] = None
+    cnpj: Optional[str] = None
+    uf: Optional[str] = None
+    cidade: Optional[str] = None
+
+
+class UsuarioAlterarSenha(BaseModel):
+    """Schema para alterar senha"""
+    senha_atual: str
+    nova_senha: str
+    confirmar_senha: str
+
+
 class UsuarioResponse(UsuarioBase):
     """Schema de resposta do usuário"""
     id: int
+    cpf: Optional[str] = None
+    telefone: Optional[str] = None
+    data_nascimento: Optional[date] = None
     plano: str
     ativo: bool
     criado_em: datetime
