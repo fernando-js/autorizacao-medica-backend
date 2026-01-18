@@ -1,0 +1,22 @@
+# FastAPI e servidor
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Banco de dados
+sqlalchemy==2.0.23
+alembic==1.12.1
+
+# Autenticação
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+
+# Variáveis de ambiente
+python-dotenv==1.0.0
+
+# Validação e utilitários
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Banco de dados SQLite (para desenvolvimento)
+# PostgreSQL (produção): psycopg2-binary==2.9.9
